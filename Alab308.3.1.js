@@ -37,19 +37,20 @@ console.log("Part 2: Prime Time")
 //As soon as you find the prime number, log that number and exit the loop.
 //Continuing with the example above, if n is equal to 4, your loop should log 5. Similarly, if n is 5, it should log 7, and if n is 9, it should log 11. 
 
-const n = 55;
-let prime = true;
-for (let q =2; q <= Math.sqrt(n); q++) {
-    if (n % q ==0 ) {
-        prime = false;
-        break;
+const n = 56;
+const ip = (n) => {
+    let sqroot = Math.floor(Math.sqrt(n));
+    let prime = true;    
+    for (let q =2; q <= Math.sqroot(n); q++) {
+        if (n % q ==0 ) {
+            prime = false;
+            break;
+        }
     }
-
+    return prime;
 }
 
-if (prime) {
-    console.log(n);
-}
+console.log("Part 3: Feeling Loopy")
 
 //Your task is to write a script that accomplishes the following:
 //oop through the characters of a given CSV string.
